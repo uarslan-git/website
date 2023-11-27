@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    @font-face {
+        font-family: 'NeueMontreal-Light';
+        src: local("NeueMontreal"),
+        url("./src/fonts/NeueMontreal-Light.otf") format("opentype");
+    }
 
+    @font-face {
+        font-family: 'NeueMontreal-Medium';
+        src: local("NeueMontreal"),
+        url("./src/fonts/NeueMontreal-Regular.otf") format("opentype");
+    }
+
+    @font-face {
+        font-family: 'NeueMontreal-Bold';
+        src: local("NeueMontreal"),
+        url("./src/fonts/NeueMontreal-Medium.otf") format("opentype");
+    }
+
+    * {
+        background: black;
+        color: white;
+    }
+
+    .light {
+        font-family: NeueMontreal-Light;
+    }
+
+    .medium {
+        font-family: NeueMontreal-Medium;
+    }
+
+    .regular {
+        font-family: NeueMontreal-Regular;
+    }
+</style>
 <head>
     <title>Portfolio - Umut Arslan</title>
     <meta name="theme_color" content="#"/>
     <meta name="author" content="#"/>
     <meta name="description" content="#"/>
     <meta name="keywords" content="#"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8"/>
 
     <script src="src/js/bootstrap.min.js"></script>
     <script src="src/js/fontAwesome.js"></script>
@@ -18,118 +53,9 @@
 </head>
 
 <body data-bs-theme="dark">
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-1">
-    <div class="container-fluid">
-        <div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">About</a>
-                    </li>
-                    <li>
-                        <a class="nav-link disabled" href="#">Skills</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div>
-            <a class="navbar-brand" href="#">Umut Arslan</a>
-        </div>
-        <div class="d-flex gap-3 text-center m-e">
-            <a class="nav-link" href="https://www.linkedin.com/in/umut-arslan-115a89213/"><i
-                    class="fab fa-linkedin fa-lg"></i></a>
-            <a class="nav-link" href="https://github.com/umut-arslan"><i class="fab fa-github fa-lg"></i></a>
-            <a class="nav-link" href="https://www.behance.net/umut-arslan"><i class="fab fa-behance fa-lg"></i></a>
-        </div>
-    </div>
-</nav>
-
-<div class="container" id="home">
-    <hr class="invisible my-5">
-    <div class="row">
-        <div class="col-md-7 order-md-1">
-            <h2>About Me</h2>
-            <p class="lead">Hi there! My name is Umut and I'm a passionate Computer Science student with a background in
-                graphics design. I started my journey into the world of technology at the young age of 12, exploring
-                reverse
-                engineering, C++ memory hacking, and cheat programming.
-                <br>
-                Since then, I've explored various areas of technology and honed my skills in motion graphics, video
-                editing,
-                and
-                social media design using tools such as Cinema 4D, After Effects, Photoshop, and Illustrator. As a
-                certified
-                graphics designer, I've worked on commissioned intro work, edits, and social media designs for various
-                clients,
-                especially on YouTube, Twitch, and Twitter.
-                <br><br>
-                Thanks for stopping by!
-            </p>
-        </div>
-        <div class="text-center col-md-5 order-md-1">
-            <picture class="container">
-                <img src="img/portrait.png" width="auto" height="400" alt="Umut Arslan">
-            </picture>
-        </div>
-    </div>
-</div>
-
-<div class="container" id="hobbys">
-    <hr class="invisible my-lg-5">
-    <h1 class="text-center">Hobbys</h1>
-    <hr class="invisible my-lg-3">
-
-    <!--    Software Development section-->
-    <div class="row my-5 gap-4">
-        <div class="col-md-5 order-1">
-            <h2>Software, Hardware & Linux</h2>
-            <br>
-            <p class="lead">
-                Chili can be blended with minced pork shoulder, also try rubbing the kebab with meatloaf lassi.
-                Avocado can be garnished with puréed chocolate, also try decorateing the stir-fry with teriyaki.
-                Cabbage can be rinseed with quartered celery, also try tossing the pie with whiskey.
-                Ghee can be mashed up with sun-dried chicken, also try garnishing the paste with rum.
-                tender, sliced pudding is best whisked with grey sweet chili sauce.
-                Quinoa can be marinateed with shredded meatballs, also try rubbing the cheesecake with peppermint tea.
-                Ground beef can be marinateed with large pumpkin seeds, also try brushing the tart with coconut milk.
-                Per guest prepare four oz of vinegar with simmered rhubarb for dessert!
-            </p>
-        </div>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade col order-0">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/software/neofetch.png" class="d-block w-100 object-fit-cover" width="500"
-                         height="500"
-                         alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/software/code.jpg" class="d-block w-100 object-fit-cover" width="500" height="500"
-                         alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/software/arduino.jpg" class="d-block w-100 object-fit-cover" width="500"
-                         height="500"
-                         alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
+<div class="overflow-hidden position-fixed vw-100 vh-100 overflow-hidden">
+    <div id="canvas"></div>
 
 </div>
-
 </body>
-
 </html>
